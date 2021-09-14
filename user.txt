@@ -1,0 +1,18 @@
+username:staff@gmail.com	
+password:22222
+level user : 2 (staff IT)
+
+username : smk@gmail.com
+old password : 11111
+new password : 22222(belum update)
+level user :1 (user)
+
+joko@gmail.com
+11111
+
+
+fix laporan.(done)
+fix tampil data tiket halaman staff it . (done)
+fix update data profil (done)
+update foto
+update password
