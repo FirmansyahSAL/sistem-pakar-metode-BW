@@ -23,7 +23,7 @@
                         <form action="<?= base_url('divisi/save_divisi') ?>" method="post">
                             <div class="form-group">
                                 <label>Divisi</label>
-                                <input type="text" name="divisi" class="form-control" placeholder="divisi">
+                                <input type="text" name="divisi" class="form-control" placeholder="divisi" required oninvalid="this.setCustomValidity('Data Divisi tidak boleh kosong')" oninput="setCustomValidity('')">
                             </div>
 
                             <div class="card-footer">

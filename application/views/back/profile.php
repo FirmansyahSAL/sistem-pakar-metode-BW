@@ -77,14 +77,14 @@
                                                   <div class="form-group row">
                                                       <label for="inputEmail" class="col-sm-2 col-form-label">New Password</label>
                                                       <div class="col-sm-10">
-                                                          <input type="password" name="new_password" class="form-control" placeholder="new password">
+                                                          <input type="password" name="new_password" class="form-control" placeholder="new password" required oninvalid="this.setCustomValidity('New Password tidak boleh kosong')" oninput="setCustomValidity('')">
                                                       </div>
                                                   </div>
 
                                                   <div class="form-group row">
                                                       <label for="inputEmail" class="col-sm-2 col-form-label">Confrim Password</label>
                                                       <div class="col-sm-10">
-                                                          <input type="password" name="confirm_new_password" class="form-control" placeholder="confirm password">
+                                                          <input type="password" name="confirm_new_password" class="form-control" placeholder="confirm password" required oninvalid="this.setCustomValidity('Confirm Password tidak boleh kosong')" oninput="setCustomValidity('')">
                                                       </div>
                                                   </div>
                                                   <div class="form-group row">

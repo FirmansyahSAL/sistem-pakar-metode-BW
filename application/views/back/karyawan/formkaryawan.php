@@ -19,7 +19,7 @@
                         <form action="<?= base_url('karyawan/save_karyawan') ?>" method="post" enctype="multipart/form-data">
 
                             <div class="input-group mb-3">
-                                <input type="text" name="nik" class="form-control" placeholder="NIK">
+                                <input type="text" name="nik" class="form-control" placeholder="NIK" required oninvalid="this.setCustomValidity('Nik tidak boleh kosong')" oninput="setCustomValidity('')">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fa fa-user"></span>
@@ -28,7 +28,7 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                <input type="text" name="username" class="form-control" placeholder="Username" required oninvalid="this.setCustomValidity('Username tidak boleh kosong')" oninput="setCustomValidity('')">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fa fa-user"></span>
@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="text" name="email" class="form-control" placeholder="Email">
+                                <input type="text" name="email" class="form-control" placeholder="Email" required oninvalid="this.setCustomValidity('Email tidak boleh kosong')" oninput="setCustomValidity('')">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fa fa-envelope"></span>
@@ -46,7 +46,7 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                <input type="password" name="password" class="form-control" placeholder="Password" required oninvalid="this.setCustomValidity('Password tidak boleh kosong')" oninput="setCustomValidity('')">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fa fa-lock"></span>
@@ -55,7 +55,7 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
+                                <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required oninvalid="this.setCustomValidity('Confirm Password tidak boleh kosong')" oninput="setCustomValidity('')">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fa fa-lock"></span>

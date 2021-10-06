@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SIS | Registration Page</title>
+    <title>SISPAK | Registration Page</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +23,7 @@
 <body class="hold-transition register-page">
     <div class="register-box">
         <div class="register-logo">
-            <a href="#"><b>REGISTER</b></a>
+            <a href="#"><img class="mb-4" src="assets/images/icon/icon.png" alt="" width="72" height="72"><b>REGISTER</b></a>
         </div>
 
         <div class="card">
@@ -35,7 +35,7 @@
                 <form action="<?= base_url('auth/proses_register') ?>" method="post">
                     <label for="Nik">Nik</label>
                     <div class="input-group mb-3">
-                        <input type="text" name="nik" class="form-control" placeholder="Nik">
+                        <input type="text" name="nik" class="form-control" placeholder="Nik" required oninvalid="this.setCustomValidity('Nik tidak boleh kosong')" oninput="setCustomValidity('')">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -44,7 +44,7 @@
                     </div>
                     <label for="Username">Username</label>
                     <div class="input-group mb-3">
-                        <input type="text" name="username" class="form-control" placeholder="Username">
+                        <input type="text" name="username" class="form-control" placeholder="Username" required oninvalid="this.setCustomValidity('Username tidak boleh kosong')" oninput="setCustomValidity('')">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -54,7 +54,7 @@
 
                     <label for="email">Email</label>
                     <div class="input-group mb-3">
-                        <input type="text" name="email" value="<?= set_value('email') ?>" class="form-control" placeholder="Email">
+                        <input type="text" name="email" value="<?= set_value('email') ?>" class="form-control" placeholder="Email" required oninvalid="this.setCustomValidity('Email tidak boleh kosong')" oninput="setCustomValidity('')">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -63,7 +63,7 @@
                     </div>
                     <label for="Password">Password</label>
                     <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required oninvalid="this.setCustomValidity('Password tidak boleh kosong')" oninput="setCustomValidity('')">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -72,7 +72,7 @@
                     </div>
                     <label for="Confirm password">Confirm password</label>
                     <div class="input-group mb-3">
-                        <input type="password" name="confirm_password" class="form-control" placeholder="Retype password">
+                        <input type="password" name="confirm_password" class="form-control" placeholder="Retype password" required oninvalid="this.setCustomValidity('Confirm Password tidak boleh kosong')" oninput="setCustomValidity('')">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>

@@ -111,12 +111,12 @@
                 <div class="modal-body">
                     <form action="<?= base_url('tiket/save_tiket') ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="text" name="no_tiket" value="<?= $no_tiket ?>" readonly class="form-control"><label>Keluhan</label>
+                            <input type="text" name="no_tiket" value="<?= $no_tiket ?>" readonly class="form-control" required oninvalid="this.setCustomValidity('Keluhan tidak boleh kosong')" oninput="setCustomValidity('')"><label>Keluhan</label>
                             <input type="text" name="judul_tiket" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>keterangan</label>
-                            <textarea name="deskripsi" class="form-control">
+                            <textarea name="deskripsi" class="form-control" required oninvalid="this.setCustomValidity('Keterangan tidak boleh kosong')" oninput="setCustomValidity('')">
                         </textarea>
                         </div>
                         <div class="form-group">
@@ -353,17 +353,17 @@
                 <div class="modal-body">
                     <form action="<?= base_url('tiket/save_tiket') ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="text" name="no_tiket" value="<?= $no_tiket ?>" class="form-control"><label>Keluhan</label>
+                            <input type="text" name="no_tiket" value="<?= $no_tiket ?>" class="form-control" required oninvalid="this.setCustomValidity('Keluhan tidak boleh kosong')" oninput="setCustomValidity('')"><label>Keluhan</label>
                             <input type="text" name="judul_tiket" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>keterangan</label>
-                            <textarea name="deskripsi" class="form-control">
+                            <textarea name="deskripsi" class="form-control" required oninvalid="this.setCustomValidity('Keterangan tidak boleh kosong')" oninput="setCustomValidity('')">
                         </textarea>
                         </div>
                         <div class="form-group">
                             <label>Gambar</label><br>
-                            <input type="file" name="gambar_tiket">
+                            <input type="file" name="gambar_tiket" required oninvalid="this.setCustomValidity('Gambar tidak boleh kosong')" oninput="setCustomValidity('')">
                         </div>
                         <button type="submit" class="btn btn-primary">Save</button>
                         <button type="reset" class="btn btn-danger">Reset</button>

@@ -30,7 +30,7 @@
                         <div class="inner">
                             <h3><?= $tiket_wait ?></h3>
 
-                            <p>Menunggu Respon</p>
+                            <p>Total Gejala</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-bag"></i>
@@ -45,7 +45,7 @@
                         <div class="inner">
                             <h3><?= $tiket_proses ?></h3>
 
-                            <p>Proses Pengerjaan</p>
+                            <p>Total Penyakit</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
@@ -60,7 +60,7 @@
                         <div class="inner">
                             <h3><?= $tiket_close ?></h3>
 
-                            <p>Tiket Sukses</p>
+                            <p>Basis Pengetahuan</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
@@ -75,7 +75,7 @@
                         <div class="inner">
                             <h3><?= $users ?></h3>
 
-                            <p>Karyawan</p>
+                            <p>User</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-pie-graph"></i>

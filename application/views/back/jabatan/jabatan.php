@@ -24,7 +24,7 @@
                         <form action="<?= base_url('jabatan/save_jabatan') ?>" method="post">
                             <div class="form-group">
                                 <label>Jabatan</label>
-                                <input type="text" name="jabatan" class="form-control" placeholder="jabatan">
+                                <input type="text" name="jabatan" class="form-control" placeholder="jabatan" required oninvalid="this.setCustomValidity('Data Jabatan tidak boleh kosong')" oninput="setCustomValidity('')">
                             </div>
 
                             <div class="card-footer">
