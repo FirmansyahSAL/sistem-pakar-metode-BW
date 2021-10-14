@@ -30,12 +30,12 @@
                         <div class="inner">
                             <h3><?= $tiket_wait ?></h3>
 
-                            <p>Total Gejala</p>
+                            <p>Data Gejala</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-stethoscope"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
                     </div>
                 </div>
                 <!-- ./col -->
@@ -45,12 +45,12 @@
                         <div class="inner">
                             <h3><?= $tiket_proses ?></h3>
 
-                            <p>Total Penyakit</p>
+                            <p>Data Penyakit</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-disease"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
                     </div>
                 </div>
                 <!-- ./col -->
@@ -65,7 +65,7 @@
                         <div class="icon">
                             <i class="fas fa-book-reader"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
                     </div>
                 </div>
                 <!-- ./col -->
@@ -80,7 +80,7 @@
                         <div class="icon">
                             <i class="fas fa-user-plus"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
                     </div>
                 </div>
                 <!-- ./col -->
